@@ -1,0 +1,14 @@
+{
+  "name": "hunt-mr-x",
+  "version": "1.0.0",
+  "description": "A multiplayer detective game where players hunt down Mr. X",
+  "scripts": {
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install",
+    "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm run dev\"",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+} 
